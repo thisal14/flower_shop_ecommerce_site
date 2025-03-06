@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Topbar */
+.topbar {
+    background: linear-gradient(90deg, #FFD700, #FF8C00);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.marque {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Header */
+.navbar {
+    background: #fff !important;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #228B22;
+}
+
+.logo span {
+    color: #FF4500;
+    transition: color 0.3s ease;
+}
+
+.logo:hover span {
+    color: #228B22;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #333 !important;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FF4500 !important;
+}
+
+.navbar-nav .nav-link i {
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to bottom, #F0FFF0, #FFFFFF);
+    padding: 150px 0 100px;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #228B22;
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+    color: #FF4500;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero-img {
+    max-width: 100%;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Buttons */
+.btn-primary {
+    background: #FF4500;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #e63900;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: #228B22;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #1a6b1a;
+    transform: scale(1.05);
+}
+
+/* Section Headings */
+.main-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #228B22;
+}
+
+.main-heading span {
+    color: #FF4500;
+}
+
+/* About Section */
+.section2 {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.about-img {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+    transform: scale(1.03);
+}
+
+.section2 h2 {
+    font-size: 2rem;
+    color: #228B22;
+    margin-bottom: 20px;
+}
+
+.section2 p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Features Section */
+.section3 {
+    padding: 60px 0;
+    background: linear-gradient(to bottom, #F0FFF0, #FFFFFF);
+}
+
+.feature-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    background: #FFD700;
+}
+
+.feature-box i {
+    font-size: 2.5rem;
+    color: #228B22;
+    margin-bottom: 15px;
+}
+
+.feature-box h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Products Section */
+.section4 {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.product-card {
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.discount {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #FFD700;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+.product-card:hover .cart-container {
+    opacity: 1;
+    bottom: 30px;
+}
+
+.cart-container button {
+    margin: 0 5px;
+    border: none;
+    background: #FF4500;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.cart-container .btn-primary {
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.cart-container button:hover {
+    background: #e63900;
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 15px 0 10px;
+    text-align: center;
+}
+
+.price {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.price span {
+    color: #FF4500;
+    font-weight: 600;
+}
+
+.price del {
+    color: #999;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+/* Reviews Section */
+.section5 {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #F0FFF0, #FFFFFF);
+}
+
+.review-inner {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.review-inner:hover {
+    transform: translateY(-10px);
+}
+
+.ratings {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.ratings li i {
+    color: #FFD700;
+    font-size: 1.2rem;
+}
+
+.review-inner p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.review-inner h3 {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.review-subtitle {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Contact Section */
+.section6 {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-img {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #228B22, #145214);
+    color: #fff;
+    padding: 60px 0 20px;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin: 10px 0;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #FFD700;
+}
+
+.payment-img {
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+.copy-right {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.copy-right p {
+    font-size: 1rem;
+}
+
+.copy-right span {
+    color: #FFD700;
+}
+
+.top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #FF4500;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: background 0.3s ease;
+}
+
+.top-btn:hover {
+    background: #e63900;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .navbar-nav.mx-auto {
+        text-align: center;
+    }
+
+    .hero-section {
+        padding: 100px 0 50px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-img {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .section2,
+    .section3,
+    .section4,
+    .section5,
+    .section6 {
+        padding: 50px 0;
+    }
+
+    .product-card,
+    .feature-box,
+    .review-inner {
+        margin-bottom: 20px;
+    }
+
+    .footer h3 {
+        margin-top: 20px;
+    }
+}
